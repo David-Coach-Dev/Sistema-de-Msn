@@ -1,0 +1,21 @@
+{
+  "name": "ecua.msm",
+  "version": "0.1.0",
+  "description": "chat para ecua.dev",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat",
+    "ecua.msn",
+    "ecua.dev"
+  ],
+  "author": "ecua.dev",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  }
+}
