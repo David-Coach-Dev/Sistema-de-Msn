@@ -26,10 +26,6 @@
   <img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.png" alt="dotenv" width="50" height="50"/>
    - dotenv</a>
   <br><br>
-  <a href="https://www.npmjs.com/package/cors" target="_blank" rel="cors">
-  <img src="https://i.imgur.com/V1RWR7l.png" alt="cors" width="50" height="50"/>
-   - cors</a>
-  <br><br>
   <a href="https://www.npmjs.com/package/mongoose" target="_blank" rel="mongoose">
   <img src="https://i.imgur.com/V1RWR7l.png" alt="mongoose" width="50" height="50"/>
    - mongoose</a>
