@@ -29,7 +29,6 @@ router.get('/', (req, res) => {
         filterOp = "a";
         op = "a"
     }
-    console.log(filterOp + " - " + op);
     controller.listChats(filterOp, op)
         .then((users) => {
             response.success(req, res, users, 200);

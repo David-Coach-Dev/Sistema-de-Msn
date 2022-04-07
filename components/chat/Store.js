@@ -16,9 +16,8 @@ function listChats(filterOp, op) {
         if (filterOp!==null && op == "c") {
             filter = { _id: filterOp };
         }
-        console.log(filter);
         Model.find(filter)
-            .populate('users', 'name')
+            .populate('users', 'name -_id' )
             .exec((error, populated) => {
                 if (error) {
                     reject(error);

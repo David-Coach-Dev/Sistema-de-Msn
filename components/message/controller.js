@@ -1,21 +1,29 @@
 //CONST
 const store = require('./store');
-//FUCTION
+const socket = require('../../socket').socket;
+//FUNCTION
 //AÑADIR POST
-function addMessage(chat, user, message) {
+function addMessage(chat, user, message, file) {
     return new Promise((resolve, reject) => {
         if (!chat || !user || !message) {
-            console.error('[MessageControler] -> No hay chat o usuario o mensaje');
-            reject('Los datos son incorrectos')
+            console.error('[MessageController] -> No hay chat o usuario o mensaje');
+            reject('Los datos son incorrectos');
             return false;
         };
+        let fileUrl = ''
+        if (file) {
+            fileUrl = 'http://localhost:3000/app/files/'+file.originalname;
+        }
         const fullMessage = {
             chat: chat,
             user: user,
             message: message,
-            date: new Date()
+            date: new Date(),
+            file: fileUrl
         };
         store.add(fullMessage);
+        //SOCKET EMIT
+        socket.io.emit('message', fullMessage);
         resolve(fullMessage);
     });
 }
@@ -25,11 +33,11 @@ function getMessage(filterOp, op) {
         resolve(store.list(filterOp, op));
     });
 }
-//ACTUALIZAR PACTH
+//ACTUALIZAR PATCH
 function updateMessage(id, message) {
     return new Promise(async(resolve, reject) => {
         if (!id || !message) {
-            console.error('[MessageControler] -> No hay chat o id o mensaje');
+            console.error('[MessageController] -> No hay chat o id o mensaje');
             reject('Los datos son incorrectos')
             return false;
         }
@@ -41,7 +49,7 @@ function updateMessage(id, message) {
 function deleteMessage(id){
     return new Promise(async (resolve, reject) => {
         if (!id) {
-            console.error('[MessageControler] -> No hay id');
+            console.error('[MessageController] -> No hay id');
             reject('Id invalido')
             return false;
         }

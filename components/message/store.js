@@ -15,9 +15,8 @@ async function getMessage(filterOp, op) {
         if (filterOp !== null && op=="c") {
             filter = { chat: filterOp };
         }
-        console.log(filter);
         Model.find(filter)
-            .populate('user', 'name')
+            .populate('user', 'name -_id')
             .exec((error, populated) => {
                 if (error) {
                     reject(error);

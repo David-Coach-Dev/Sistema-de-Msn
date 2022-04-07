@@ -1,6 +1,6 @@
 <h1 align="center">Rest-Server</h1>
 <p align="center">
-  Esta es una aplicación de Rest Server con Http, Express, Node.js, JWT, con autentificación de usuario con Google y desplegada en heroku.
+  Esta es una aplicación de Rest Server con Http, Express, Node.js, JWT, que se pueden autentificara con usuario de Google y se  desplegara en Heroku.
 </p>
 <h1></h1>
 <h2 align="center">Herramientas</h2>
@@ -30,29 +30,17 @@
   <img src="https://i.imgur.com/V1RWR7l.png" alt="mongoose" width="50" height="50"/>
    - mongoose</a>
   <br><br>
-  <a href="https://www.npmjs.com/package/bcryptjs" target="_blank" rel="bcryptjs">
-  <img src="https://i.imgur.com/V1RWR7l.png" alt="bcryptjs" width="50" height="50"/>
-   - bcryptjs</a>
+  <a href="https://www.npmjs.com/package/multer" target="_blank" rel="multer">
+  <img src="https://i.imgur.com/V1RWR7l.png" alt="multer" width="50" height="50"/>
+   - multer</a>
   <br><br>
-  <a href="https://www.npmjs.com/package/express-validator" target="_blank" rel="express-validator">
-  <img src="https://i.imgur.com/V1RWR7l.png" alt="express-validator" width="50" height="50"/>
-   - express-validator</a>
+  <a href="https://www.npmjs.com/package/socket.io" target="_blank" rel="socket.io">
+  <img src="https://i.imgur.com/V1RWR7l.png" alt="socket.io" width="50" height="50"/>
+   - socket.io</a>
   <br><br>
-  <a href="https://jwt.io/" target="_blank" rel="jwt.io">
-  <img src="https://jwt.io/img/pic_logo.svg" alt="jwt.io" width="50" height="50"/>
-   - jwt.io</a>
-  <br><br>
-  <a href="https://www.npmjs.com/package/jsonwebtoken" target="_blank" rel="jsonwebtoken">
-  <img src="https://i.imgur.com/V1RWR7l.png" alt="jsonwebtoken" width="50" height="50"/>
-   -jsonwebtoken </a>
-  <br><br>
-  <a href="https://developers.google.com/identity/sign-in/web/sign-in" target="_blank" rel="Google-developers">
-  <img src="https://www.gstatic.com/devrel-devsite/prod/v0e0f589edd85502a40d78d7d0825db8ea5ef3b99ab4070381ee86977c9168730/developers/images/lockup-developers.svg" alt="Google-developers" width="150" height="50"/>
-   -Google-developers</a>
-  <br><br>
-  <a href="https://devcenter.heroku.com/" target="_blank" rel="heroku">
-  <img src="https://www.herokucdn.com/favicons/favicon.ico" alt="heroku" width="50" height="50"/>
-   - heroku</a>
+  <a href="https://www.npmjs.com/package/cors" target="_blank" rel="cors">
+  <img src="https://i.imgur.com/V1RWR7l.png" alt="cors" width="50" height="50"/>
+   - cors</a>
 </p>
 <h1></h1>
 <h2 align="center">Nota</h2>
