@@ -1,6 +1,6 @@
 //CONST
 const db = require('mongoose');
-//CONNSCT DB
+//CONNECT DB
 db.Promise = global.Promise;
 async function connect(url) {
     
@@ -8,7 +8,7 @@ async function connect(url) {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     });
-    console.log('[dbConnect] -> Conectado con éxcito,');
+    console.log('[dbConnect] -> Conectado con excito,');
 }
 //EXPORT
 module.exports = connect;

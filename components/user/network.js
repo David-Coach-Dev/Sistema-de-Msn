@@ -26,7 +26,7 @@ router.post('/', (req, res) => {
         })
 });
 
-//PACTH
+//PATCH
 router.patch('/:id', (req, res) => {
     console.log(req.params.id);
     controller.updateUser(req.params.id, req.body.name)

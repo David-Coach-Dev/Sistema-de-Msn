@@ -4,7 +4,7 @@ const store = require('./store');
 //AÑADIR POST
 function addUser(name) {
     if (!name) {
-        console.error('[UsuerControler] -> No hay usuario o mensaje');
+        console.error('[UsuerController] -> No hay usuario o mensaje');
         return Promise.reject('Invalido user')
     };
     const user = {
@@ -24,7 +24,7 @@ function getUser(filterName) {
 function updateUser(id, name) {
     return new Promise(async (resolve, reject) => {
         if (!id || !name) {
-            console.error('[UserControler] -> No hay id o mensaje');
+            console.error('[UserController] -> No hay id o mensaje');
             reject('Los datos son incorrectos')
             return false;
         }

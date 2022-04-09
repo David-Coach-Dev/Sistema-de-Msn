@@ -4,8 +4,8 @@ exports.success = (req, res, msn, status) => {
         boby:msn
     })
 };
-exports.error = (req, res, msn, status, detalis) => {
-    console.error('[Responsede error] -> '+detalis);
+exports.error = (req, res, msn, status, details) => {
+    console.error('[Responsee error] -> '+details);
     res.status(status).send({
         status: status,
         error:  msn

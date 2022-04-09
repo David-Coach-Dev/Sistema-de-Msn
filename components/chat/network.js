@@ -37,7 +37,7 @@ router.get('/', (req, res) => {
             response.error(req, res, 'Unexpected Error.', 500, e)
         })
 });
-/*//PACTH
+/*//PATCH
 router.patch('/:id', (req, res) => {
     console.log(req.params.id);
     controller.updateMessage(req.params.id, req.body.message)

@@ -16,7 +16,7 @@ async function getUser(filterName) {
     return user;
 }
 
-//ACTUALIZAR PACTH
+//ACTUALIZAR PATCH
 async function updateUser(id, name) {
     const foundUser = await Model.findById({
         _id: id

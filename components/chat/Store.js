@@ -28,7 +28,7 @@ function listChats(filterOp, op) {
     })
 }
 /*
-//ACTUALIZAR PACTH
+//ACTUALIZAR PATCH
 async function updateMessage(id, message) {
     const foundMessage = await Model.findById({
         _id: id

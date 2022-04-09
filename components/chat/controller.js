@@ -1,12 +1,12 @@
 //CONST
 const { attachment } = require('express/lib/response');
 const store = require('./store');
-//FUCTION
+//FUNCTION
 //AÑADIR POST
 function addChat(users) {
     console.log(users)
     if (!users || !Array.isArray(users)) {
-        console.error('[ChatControler] -> Invalidad lista de usuarios');
+        console.error('[ChatController] -> Invalidad lista de usuarios');
         return Promise.reject('Invalid user list');
     };
     const chat = {
@@ -20,11 +20,11 @@ function listChats(filterOp, op) {
     return store.list(filterOp, op);
 };
 
-/*//ACTUALIZAR PACTH
+/*//ACTUALIZAR PATCH
 function updateMessage(id, message) {
     return new Promise(async (resolve, reject) => {
         if (!id || !message) {
-            console.error('[MessageControler] -> No hay id o mensaje');
+            console.error('[MessageController] -> No hay id o mensaje');
             reject('Los datos son incorrectos')
             return false;
         }
@@ -36,7 +36,7 @@ function updateMessage(id, message) {
 function deleteMessage(id) {
     return new Promise(async (resolve, reject) => {
         if (!id) {
-            console.error('[MessageControler] -> No hay id');
+            console.error('[MessageController] -> No hay id');
             reject('Id invalido')
             return false;
         }

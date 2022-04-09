@@ -14,6 +14,6 @@ const storage = multer.diskStorage({
     }
 });
 
-const upload = multer({ storage: storage }); // <= aqui asignamos las opciones
+const upload = multer({ storage: storage }); // <= aquí asignamos las opciones
 
 module.exports = upload; // <= exportamos el módulo
