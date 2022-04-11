@@ -1,6 +1,6 @@
-<h1 align="center">Rest-Server</h1>
+<h1 align="center">Sistema de mensajería.</h1>
 <p align="center">
-  Esta es una aplicación de Rest Server con Http, Express, Node.js, JWT, que se pueden autentificara con usuario de Google y se  desplegara en Heroku.
+  Esta es una aplicación mensajería con Express, Node.js.
 </p>
 <h1></h1>
 <h2 align="center">Herramientas</h2>
